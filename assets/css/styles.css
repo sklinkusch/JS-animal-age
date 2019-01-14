@@ -39,6 +39,11 @@ label[for="cow"],
 label[for="chinchilla"] {
   flex: 0 0 5%;
 }
+label[for="dog"] img,
+label[for="cow"] img,
+label[for="chinchilla"] img {
+  width: 50px;
+}
 input[type="number"] {
   width: 30%;
 }
