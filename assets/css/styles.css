@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hotpink;
+}
+.formrow {
+  margin: 20px;
+}
+input:active {
+  background-color: aqua;
+}
