@@ -1,6 +1,16 @@
-let Animal = prompt("What animal do you have?", "Dog");
-let AnimYear = prompt("Age of your animal?", 1);
-function calculateAge(Animal, AnimYear) {
+//let Animal = prompt("What animal do you have?", "Dog");
+//let AnimYear = prompt("Age of your animal?", 1);
+function calculateAge() {
+  let Animal;
+  let AnimYear;
+  if (document.getElementById("dog").checked) {
+    Animal = "Dog";
+  } else if (document.getElementById("cow").checked) {
+    Animal = "Cow";
+  } else if (document.getElementById("chinchilla").checked) {
+    Animal = "Chinchilla";
+  }
+  AnimYear = Number(document.getElementById("age").value);
   let conversionRate;
   switch (Animal) {
     case "Dog":
@@ -18,6 +28,7 @@ function calculateAge(Animal, AnimYear) {
       );
   }
   let HumYear = AnimYear * conversionRate;
-  return `Your ${Animal} is ${AnimYear} years old, that corresponds to ${HumYear} human years.`;
+  let Message = `Your ${Animal} is ${AnimYear} years old, that corresponds to ${HumYear} human years.`;
+  document.getElementById("message").innerHTML = Message;
 }
-document.write(calculateAge(Animal, AnimYear));
+//document.write(calculateAge(Animal, AnimYear));

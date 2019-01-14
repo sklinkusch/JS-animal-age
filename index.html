@@ -19,8 +19,14 @@
       </div>
       <div class="formrow"><input type="number" name="age" id="age" /></div>
       <div class="formrow">
-        <input type="text" name="humanage" id="humanage" readonly />
+        <input
+          type="button"
+          id="calc"
+          value="Convert age"
+          onclick="calculateAge()"
+        />
       </div>
+      <section id="messagecontainer"><p id="message">&nbsp;</p></section>
     </form>
     <script src="./assets/js/main.js"></script>
   </body>
