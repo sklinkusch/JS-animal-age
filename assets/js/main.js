@@ -17,6 +17,7 @@ function calculateAge(Animal, AnimYear) {
         "Other animals than dogs, cats, and chinchillas are not supported."
       );
   }
-  return AnimYear * conversionRate;
+  let HumYear = AnimYear * conversionRate;
+  return `Your ${Animal} is ${AnimYear} years old, that corresponds to ${HumYear} human years.`;
 }
-alert(calculateAge(Animal, AnimYear));
+document.write(calculateAge(Animal, AnimYear));
