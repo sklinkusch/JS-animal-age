@@ -11,6 +11,7 @@
     <header><h1>Animal Age Calculator</h1></header>
     <form action="" method="get">
       <div class="formrow">
+        <label for="animal">Animal:</label>
         <input type="radio" name="animal" id="dog" value="Dog" />
         <label for="dog">Dog</label>
         <input type="radio" name="animal" id="cow" value="Cow" />
@@ -18,7 +19,10 @@
         <input type="radio" name="animal" id="chinchilla" value="Chinchilla" />
         <label for="chinchilla">Chinchilla</label>
       </div>
-      <div class="formrow"><input type="number" name="age" id="age" /></div>
+      <div class="formrow">
+        <label for="age">Age of the animal: </label>
+        <input type="number" name="age" id="age" />
+      </div>
       <div class="formrow">
         <input
           type="button"

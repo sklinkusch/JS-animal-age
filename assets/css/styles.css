@@ -19,6 +19,28 @@ h1 {
 .formrow {
   margin: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+label[for="animal"] {
+  flex: 0 0 23.6%;
+  text-align: left;
+}
+label[for="age"] {
+  flex: 0 0 20%;
+  text-align: left;
+}
+input[type="radio"] {
+  flex: 0 0 3%;
+}
+label[for="dog"],
+label[for="cow"],
+label[for="chinchilla"] {
+  flex: 0 0 5%;
+}
+input[type="number"] {
+  width: 30%;
 }
 #messagecontainer {
   width: 75%;
