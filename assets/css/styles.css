@@ -6,6 +6,16 @@
 body {
   background-color: hotpink;
 }
+header {
+  width: 85%;
+  background-color: #444;
+  margin: 20px auto;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
 .formrow {
   margin: 20px;
   text-align: center;
